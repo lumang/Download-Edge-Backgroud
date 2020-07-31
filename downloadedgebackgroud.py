@@ -19,10 +19,13 @@ def save_image(name,imageUrl):
 
 images = res.json()['images']
 
-for i in range(0,len(images)):
-    imgeurl='https://bing.com/'+ images[i]['url']
-    name=res.json()['images'][i]['fullstartdate']
-    print(imgeurl) 
-    #找到图片路径下载
-    save_image(name,imgeurl)
+def main():
+    for i in range(0,len(images)):
+        imgeurl='https://bing.com/'+ images[i]['url']
+        name=images[i]['fullstartdate'] # name file
+        print(imgeurl) 
+        #找到图片路径下载
+        save_image(name,imgeurl)
 
+if __name__ == "__main__":
+    main()
