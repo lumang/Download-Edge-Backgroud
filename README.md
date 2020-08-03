@@ -1,6 +1,7 @@
 # Download-Edge-Backgroud
+# 下载 Edge 背景图片
 Download Edge Backgroud
-
+下载 Edge 新页面 背景图片
 ![](./screenshot/1.png)
 
 ## TODO
