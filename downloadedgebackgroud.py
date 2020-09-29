@@ -22,7 +22,8 @@ images = res.json()['images']
 def main():
     for i in range(0,len(images)):
         imgeurl='https://bing.com/'+ images[i]['url']
-        name=images[i]['fullstartdate'] # name file
+        name=images[i]['urlbase'] # name file
+        name=name.split('.')[1] # AerialTamul_ZH-CN3164679201_1920x1080
         print(imgeurl) 
         #找到图片路径下载
         save_image(name,imgeurl)
